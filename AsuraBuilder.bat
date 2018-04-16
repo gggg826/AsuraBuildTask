@@ -3,7 +3,9 @@ cls
 color 2f
 
 rem Asura工程目录
-set Client_Path=F:\UnityProject\Commercail\Asura\trunk\Public\
+set Table_Path=F:\UnityProject\Commercail\Asura\trunk\Public\
+rem Asura工程目录
+set Client_Path=F:\UnityProject\Commercail\Asura\trunk\
 rem UNITY_5_5_4目录
 set "UNITY_5_5_4_HOME=E:\Program Files\Unity5.5.4f1\Editor"
 
@@ -23,8 +25,8 @@ svn revert --recursive %Client_Path%
 
 echo.
 echo --------------------------  Sync Table Data -------------------------------------------
-cd %Client_Path%
-start /wait %Client_Path%AysncForClientRun.bat
+cd %Table_Path%
+start /wait %~dp0AysncForClientRun.bat
 
 echo.
 echo --------------------------  Start Build AssetBundles ----------------------------------
