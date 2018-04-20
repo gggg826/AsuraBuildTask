@@ -29,7 +29,7 @@ svn cleanup %Client_Path%
 
 echo.
 echo --------------------------  SVN Update ------------------------------------------------
-svn update %Client_Path%
+svn update %Client_Path% --accept theirs-full
 
 echo.
 echo --------------------------  SVN Revert ------------------------------------------------
